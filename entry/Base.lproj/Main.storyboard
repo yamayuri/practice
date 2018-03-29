@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rK2-xT-znO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="entry" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9do-sn-W1b" userLabel="PinkBtnView">
+                                <rect key="frame" x="20" y="524" width="335" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebn-tS-bNt">
+                                        <rect key="frame" x="0.0" y="15" width="335" height="43"/>
+                                        <color key="backgroundColor" red="0.88627450980392153" green="0.396078431372549" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="新規登録">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapButtonNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiT-hU-lut"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5T5-2X-Hzb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ebn-tS-bNt" secondAttribute="trailing" id="5y1-YJ-S19"/>
+                                    <constraint firstItem="Ebn-tS-bNt" firstAttribute="leading" secondItem="9do-sn-W1b" secondAttribute="leading" id="8iQ-6a-gIa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ebn-tS-bNt" secondAttribute="bottom" constant="2" id="qHe-b9-qMx"/>
+                                    <constraint firstItem="Ebn-tS-bNt" firstAttribute="top" secondItem="9do-sn-W1b" secondAttribute="top" constant="15" id="vXK-kA-nTQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGg-ok-bke" userLabel="OrangeBtnView">
+                                <rect key="frame" x="20" y="495" width="335" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-6w-6Ck">
+                                        <rect key="frame" x="0.0" y="-2" width="335" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="スタート">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="StartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFP-AG-mNR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OMc-6w-6Ck" secondAttribute="trailing" id="71u-eL-e3y"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ea2-bn-MOc"/>
+                                    <constraint firstItem="OMc-6w-6Ck" firstAttribute="leading" secondItem="nGg-ok-bke" secondAttribute="leading" id="UDL-bB-Wb2"/>
+                                    <constraint firstItem="OMc-6w-6Ck" firstAttribute="top" secondItem="nGg-ok-bke" secondAttribute="top" constant="-2" id="UeH-KG-6TI"/>
+                                    <constraint firstAttribute="bottom" secondItem="OMc-6w-6Ck" secondAttribute="bottom" constant="2" id="ctT-pW-tm8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntd-P1-sBf" userLabel="BlueView">
+                                <rect key="frame" x="20" y="550" width="335" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-bT-GM1">
+                                        <rect key="frame" x="0.0" y="-2" width="335" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.62978744319840962" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="編集">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapButtonEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3I-y6-LkN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pcf-bT-GM1" secondAttribute="bottom" constant="2" id="TqC-OV-pyB"/>
+                                    <constraint firstAttribute="height" constant="44" id="V1k-ID-ALc"/>
+                                    <constraint firstItem="pcf-bT-GM1" firstAttribute="top" secondItem="Ntd-P1-sBf" secondAttribute="top" constant="-2" id="e6I-L1-eZP"/>
+                                    <constraint firstItem="pcf-bT-GM1" firstAttribute="leading" secondItem="Ntd-P1-sBf" secondAttribute="leading" id="h6D-rx-tTT"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcf-bT-GM1" secondAttribute="trailing" id="jn6-k8-wre"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopImage" translatesAutoresizingMaskIntoConstraints="NO" id="xT7-pv-GLz">
+                                <rect key="frame" x="67" y="154" width="240" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Bo-qG-PCS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ntd-P1-sBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Uo-4z-geo"/>
+                            <constraint firstItem="nGg-ok-bke" firstAttribute="leading" secondItem="9do-sn-W1b" secondAttribute="leading" id="284-GO-5Bx"/>
+                            <constraint firstItem="nGg-ok-bke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Dy-6U-dil"/>
+                            <constraint firstItem="9do-sn-W1b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BEa-Ih-cdY"/>
+                            <constraint firstItem="Ntd-P1-sBf" firstAttribute="leading" secondItem="9do-sn-W1b" secondAttribute="leading" id="BKH-86-vfm"/>
+                            <constraint firstItem="nGg-ok-bke" firstAttribute="trailing" secondItem="9do-sn-W1b" secondAttribute="trailing" id="FnI-Bq-pfu"/>
+                            <constraint firstItem="9do-sn-W1b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="460" id="MoV-Q1-CjY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xT7-pv-GLz" secondAttribute="trailing" constant="68" id="Qo5-tD-Lhb"/>
+                            <constraint firstItem="Ntd-P1-sBf" firstAttribute="trailing" secondItem="9do-sn-W1b" secondAttribute="trailing" id="XKc-1R-hju"/>
+                            <constraint firstItem="nGg-ok-bke" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="495" id="cM2-bs-elR"/>
+                            <constraint firstItem="xT7-pv-GLz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="dBC-6t-8FW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9do-sn-W1b" secondAttribute="trailing" constant="20" id="fyO-fc-FSV"/>
+                            <constraint firstItem="xT7-pv-GLz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="owj-fd-cLB"/>
+                            <constraint firstItem="Ntd-P1-sBf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="550" id="v8x-qn-FES"/>
+                            <constraint firstItem="9do-sn-W1b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYk-RT-z3v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Hl-Mb-zxZ"/>
+                    <connections>
+                        <outlet property="editBtnView" destination="pcf-bT-GM1" id="hyc-7Q-MSt"/>
+                        <outlet property="newBtnView" destination="Ebn-tS-bNt" id="c3c-hO-Q7i"/>
+                        <outlet property="startBtnView" destination="OMc-6w-6Ck" id="fA6-6f-ytx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vkp-lg-KOm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rK2-xT-znO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jpv-LZ-SJl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tjc-z3-fkZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwc-HN-Uld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TopImage" width="275" height="68"/>
+    </resources>
+</document>
