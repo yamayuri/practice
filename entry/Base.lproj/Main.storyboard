@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -126,11 +125,21 @@
                                     <constraint firstAttribute="height" constant="80" id="9Bo-qG-PCS"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiA-p2-XdO">
+                                <rect key="frame" x="0.0" y="647" width="375" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="d6D-GO-cer"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ntd-P1-sBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Uo-4z-geo"/>
                             <constraint firstItem="nGg-ok-bke" firstAttribute="leading" secondItem="9do-sn-W1b" secondAttribute="leading" id="284-GO-5Bx"/>
+                            <constraint firstItem="FiA-p2-XdO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Hn-Fa-M5o"/>
                             <constraint firstItem="nGg-ok-bke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Dy-6U-dil"/>
                             <constraint firstItem="9do-sn-W1b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BEa-Ih-cdY"/>
                             <constraint firstItem="Ntd-P1-sBf" firstAttribute="leading" secondItem="9do-sn-W1b" secondAttribute="leading" id="BKH-86-vfm"/>
@@ -142,7 +151,9 @@
                             <constraint firstItem="xT7-pv-GLz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="dBC-6t-8FW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9do-sn-W1b" secondAttribute="trailing" constant="20" id="fyO-fc-FSV"/>
                             <constraint firstItem="xT7-pv-GLz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="owj-fd-cLB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FiA-p2-XdO" secondAttribute="trailing" id="ttH-vK-Mc7"/>
                             <constraint firstItem="Ntd-P1-sBf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="550" id="v8x-qn-FES"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FiA-p2-XdO" secondAttribute="bottom" id="vNd-e5-rDB"/>
                             <constraint firstItem="9do-sn-W1b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYk-RT-z3v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
